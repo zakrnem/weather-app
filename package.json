@@ -1,0 +1,26 @@
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "description": "Displays weather",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('Test')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "weather-app"
+  },
+  "author": "zakrnem",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "source-map-loader": "^4.0.1",
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "footer-zkrnem": "latest"
+  }
+}

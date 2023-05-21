@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    margin-top: 1.5rem;
+    font-weight: 300;
+}
+
+.github {
+    height: 1.5rem;
+    width:auto;
+    fill: white
+}
+
+.github:hover {
+    transform: rotate(720deg);
+    transition: transform 1.5s;
+    fill: white
+}
