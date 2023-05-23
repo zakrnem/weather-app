@@ -6,10 +6,7 @@ import { currentWeather } from './getCurrent'
 export function homepage() {
     header()
     
-    const content = document.querySelector('#content')
-    const dashboard = document.createElement('div')
-    dashboard.className = 'dashboard'
-    content.append(dashboard)
+    
     
     footer()
 
@@ -34,6 +31,4 @@ export function homepage() {
             }
         }
     })
-
-
 }

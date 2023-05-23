@@ -1,6 +1,11 @@
+import { clearDOM } from "./clearDOM"
+
 export function currentDashboard(realTemp, humidity, uvIndex, conditionText, conditionIcon, currCity, country) {
-    const dashboard = document.querySelector('.dashboard')
-    
+    clearDOM()
+    const content = document.querySelector('#content')
+    const dashboard = document.createElement('div')
+    dashboard.className = 'dashboard'
+        
     const container = document.createElement('div')
     container.className = 'current-weather'
 
@@ -23,6 +28,7 @@ export function currentDashboard(realTemp, humidity, uvIndex, conditionText, con
         uvi.textContent = 'UV Index: ' + uvIndex
 
         container.append(location, weatherIcon, weatherCondition, temperature, humidityPercent, uvi)
-
+    
     dashboard.append(container)
+    content.append(dashboard)
 }
