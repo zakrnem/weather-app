@@ -1,10 +1,16 @@
 import { header } from './header'
 import { footer } from 'footer-zkrnem'
 import { currentDashboard} from './currentDash'
+import { currentWeather } from './getCurrent'
 
 export function homepage() {
     header()
-    currentDashboard()
+    
+    const content = document.querySelector('#content')
+    const dashboard = document.createElement('div')
+    dashboard.className = 'dashboard'
+    content.append(dashboard)
+    
     footer()
 
     document.addEventListener('click', (e) => {
@@ -12,7 +18,7 @@ export function homepage() {
             const userInput = document.querySelector('.search-bar').value
             const units = document.querySelector('.change-units').id
             
-            currentDashboard(userInput, units)
+            currentWeather(userInput, units)
         }
 
         if (e.target.className === 'change-units') {
