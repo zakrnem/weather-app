@@ -32,7 +32,7 @@ export function header() {
         const changeUnits = document.createElement('button')
         changeUnits.className = 'change-units'
         changeUnits.textContent = 'Display °F'
-        changeUnits.id = 'metric'
+        changeUnits.id = 'metric-button'
         
         header.append(logo, search, changeUnits)
 

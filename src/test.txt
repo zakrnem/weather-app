@@ -1,0 +1,9 @@
+// Pending:
+
+// Change units when pressing the corresponding button
+    Add both values to the DOM but set the visibility of one to none.
+    Get only the new temp and edit only this.
+    Use a equation.
+
+// Add city by default
+// Improve styling: font, background

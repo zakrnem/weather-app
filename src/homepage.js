@@ -1,13 +1,11 @@
 import { header } from './header'
 import { footer } from 'footer-zkrnem'
-import { currentDashboard} from './currentDash'
-import { currentWeather } from './getCurrent'
+import { currentWeather } from './currentWeather'
+import { changeUnits } from './changeUnits'
 
 export function homepage() {
     header()
-    
-    
-    
+    currentWeather('Bali', 'metric')    
     footer()
 
     document.addEventListener('click', (e) => {
@@ -24,10 +22,12 @@ export function homepage() {
 
             if (currentUnits === 'Display °F') {
                 unitsButton.textContent = 'Display °C'
-                unitsButton.id = 'imperial'
+                unitsButton.id = 'imperial-button'
+                changeUnits('imperial')
             } else {
                 unitsButton.textContent = 'Display °F'
-                unitsButton.id = 'metric'
+                unitsButton.id = 'metric-button'
+                changeUnits('metric')
             }
         }
     })
