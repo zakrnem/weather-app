@@ -1,40 +1,40 @@
 export function header() {
-    const content = document.querySelector('#content')
-    const header = document.createElement('div')
-    header.className = 'header'
+  const content = document.querySelector("#content")
+  const header = document.createElement("div")
+  header.className = "header"
 
-        const logo = document.createElement('div')
-        logo.className = 'logo-container'
-        
-            const logoImg = document.createElement('img')
-            logoImg.src = './img/weather-svgrepo-com.svg'
-            logoImg.className = 'logo-image'
+  const logo = document.createElement("div")
+  logo.className = "logo-container"
 
-            const logoText = document.createElement('div')
-            logoText.className = 'header-logo'
-            logoText.textContent = 'Weather'
+  const logoImg = document.createElement("img")
+  logoImg.src = "./img/weather-svgrepo-com.svg"
+  logoImg.className = "logo-image"
 
-            logo.append(logoImg, logoText)
+  const logoText = document.createElement("div")
+  logoText.className = "header-logo"
+  logoText.textContent = "Weather"
 
-        const search = document.createElement('div')
-        search.className = 'search-container'
-        
-            const searchBar = document.createElement('input')
-            searchBar.type = 'text'
-            searchBar.className = 'search-bar'
+  logo.append(logoImg, logoText)
 
-            const searchButton = document.createElement('button')
-            searchButton.id = 'search-button'
-            searchButton.textContent = "Search"
+  const search = document.createElement("div")
+  search.className = "search-container"
 
-            search.append(searchBar, searchButton)
+  const searchBar = document.createElement("input")
+  searchBar.type = "text"
+  searchBar.className = "search-bar"
 
-        const changeUnits = document.createElement('button')
-        changeUnits.className = 'change-units'
-        changeUnits.textContent = 'Display °F'
-        changeUnits.id = 'metric-button'
-        
-        header.append(logo, search, changeUnits)
+  const searchButton = document.createElement("button")
+  searchButton.id = "search-button"
+  searchButton.textContent = "Search"
 
-    content.appendChild(header)
+  search.append(searchBar, searchButton)
+
+  const changeUnits = document.createElement("button")
+  changeUnits.className = "change-units"
+  changeUnits.textContent = "Display °F"
+  changeUnits.id = "metric-button"
+
+  header.append(logo, search, changeUnits)
+
+  content.appendChild(header)
 }

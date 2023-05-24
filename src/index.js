@@ -1,10 +1,6 @@
-import '../node_modules/footer-zkrnem/styles.css'
-import './style.css'
+import "../node_modules/footer-zkrnem/styles.css"
+import "./style.css"
 
-import { homepage } from './homepage'
+import { homepage } from "./homepage"
 
 homepage()
-
-
-
-
