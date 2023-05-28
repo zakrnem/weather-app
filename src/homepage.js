@@ -1,19 +1,18 @@
 import { header } from "./header"
 import { footer } from "footer-zkrnem"
-import { currentWeather } from "./currentWeather"
 import { changeUnits } from "./changeUnits"
+import { weather } from "./weather"
 
 export function homepage() {
   header()
-  currentWeather("Bali", "metric")
+  weather("Bali")
   footer()
 
   document.addEventListener("click", (e) => {
     if (e.target.id === "search-button") {
       const userInput = document.querySelector(".search-bar").value
-      const units = document.querySelector(".change-units").id
 
-      currentWeather(userInput, units)
+      weather(userInput)
     }
 
     if (e.target.className === "change-units") {

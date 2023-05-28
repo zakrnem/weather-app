@@ -1,16 +1,16 @@
 import { currentDashboard } from "./currentDashboard"
-import { getCurrent } from "./getCurrent"
+import { getData } from "./getData"
 
-export async function currentWeather(city, units) {
-  const currentData = await getCurrent(city)
+export async function currentWeather(city) {
+  const currentData = await getData(city)
   const conditionText = currentData.current.condition.text
   const conditionIcon = currentData.current.condition.icon
   const humidity = currentData.current.humidity
   const uvIndex = currentData.current.uv
-  const visibilityMetric = currentData.current.vis_km
-  const visibilityImperial = currentData.current.vis_miles
-  const feelTempC = currentData.current.feelslike_c
-  const feelTempF = currentData.current.feelslike_f
+  //const visibilityMetric = currentData.current.vis_km
+  //const visibilityImperial = currentData.current.vis_miles
+  //const feelTempC = currentData.current.feelslike_c
+  //const feelTempF = currentData.current.feelslike_f
   const realTempC = currentData.current.temp_c
   const realTempF = currentData.current.temp_f
   const currCity = currentData.location.name
