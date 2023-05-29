@@ -1,6 +1,5 @@
 // Pending:
 
-// Add weekly forecast
 // Improve styling: layout, font, background
 
 {

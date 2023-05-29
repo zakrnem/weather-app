@@ -1,5 +1,5 @@
 export function forecastDashboard(avgTempC, avgTempF, conditionText, conditionIcon, date) {
-    const dashboard = document.querySelector(".dashboard")
+    const dashboard = document.querySelector(".forecast-dashboard")
 
     const container = document.createElement("div")
     container.className = "forecast"

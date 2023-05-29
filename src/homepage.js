@@ -11,7 +11,6 @@ export function homepage() {
   document.addEventListener("click", (e) => {
     if (e.target.id === "search-button") {
       const userInput = document.querySelector(".search-bar").value
-
       weather(userInput)
     }
 
@@ -28,6 +27,12 @@ export function homepage() {
         unitsButton.id = "metric-button"
         changeUnits("metric")
       }
+    }
+  })
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      const userInput = document.querySelector(".search-bar").value
+      weather(userInput)
     }
   })
 }

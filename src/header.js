@@ -23,9 +23,9 @@ export function header() {
   searchBar.type = "text"
   searchBar.className = "search-bar"
 
-  const searchButton = document.createElement("button")
+  const searchButton = document.createElement("img")
   searchButton.id = "search-button"
-  searchButton.textContent = "Search"
+  searchButton.src = './img/search-svgrepo-com.svg'
 
   search.append(searchBar, searchButton)
 

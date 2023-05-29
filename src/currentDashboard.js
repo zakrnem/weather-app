@@ -54,7 +54,10 @@ export function currentDashboard(
     humidityPercent,
     uvi
   )
+  
+  const forecastDash = document.createElement("div")
+  forecastDash.className = "forecast-dashboard"
 
-  dashboard.append(container)
+  dashboard.append(container, forecastDash)
   content.append(dashboard)
 }
