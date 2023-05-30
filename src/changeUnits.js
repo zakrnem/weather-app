@@ -5,10 +5,12 @@ export function changeUnits(units) {
   const imperialArray = [...imperial]
 
   if (units !== "metric") {
-    imperialArray.forEach((imperialTemp) => imperialTemp.style.display = "")
-    metricArray.forEach((metricTemp) =>  metricTemp.style.display = "none")
+    imperialArray.forEach((imperialTemp) => (imperialTemp.style.display = ""))
+    metricArray.forEach((metricTemp) => (metricTemp.style.display = "none"))
   } else {
-    imperialArray.forEach((imperialTemp) => imperialTemp.style.display = "none")
-    metricArray.forEach((metricTemp) =>  metricTemp.style.display = "")
+    imperialArray.forEach(
+      (imperialTemp) => (imperialTemp.style.display = "none")
+    )
+    metricArray.forEach((metricTemp) => (metricTemp.style.display = ""))
   }
 }

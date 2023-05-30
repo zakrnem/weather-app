@@ -25,7 +25,7 @@ export function header() {
 
   const searchButton = document.createElement("img")
   searchButton.id = "search-button"
-  searchButton.src = './img/search-svgrepo-com.svg'
+  searchButton.src = "./img/search-svgrepo-com.svg"
 
   search.append(searchBar, searchButton)
 

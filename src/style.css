@@ -21,7 +21,13 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #a7cbe1, var(--main), #526b85, #234454);
+  background: linear-gradient(
+    to bottom,
+    #a7cbe1,
+    var(--main),
+    #526b85,
+    #234454
+  );
 }
 
 .header {

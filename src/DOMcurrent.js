@@ -19,57 +19,53 @@ export function currentDashboard(
   const container = document.createElement("div")
   container.className = "current-weather"
 
-  const localInfo = document.createElement('div')
-  localInfo.className = 'local-info'
+  const localInfo = document.createElement("div")
+  localInfo.className = "local-info"
 
-    const location = document.createElement("p")
-    location.className = 'location'
-    location.textContent = currCity + ", " + country
+  const location = document.createElement("p")
+  location.className = "location"
+  location.textContent = currCity + ", " + country
 
-    const time = document.createElement("p")
-    time.className = 'time'
-    time.textContent = localTime
+  const time = document.createElement("p")
+  time.className = "time"
+  time.textContent = localTime
 
-    localInfo.append(location, time)
+  localInfo.append(location, time)
 
-  const mainInfo = document.createElement('div')
-  mainInfo.className = 'main-info'
-  
-    const weatherIcon = document.createElement("img")
-    weatherIcon.src = conditionIcon
+  const mainInfo = document.createElement("div")
+  mainInfo.className = "main-info"
 
-    const metricTemp = document.createElement("p")
-    metricTemp.className = "temperature metric"
-    metricTemp.textContent = realTempC + " °C"
+  const weatherIcon = document.createElement("img")
+  weatherIcon.src = conditionIcon
 
-    const impTemp = document.createElement("p")
-    impTemp.className = "temperature imperial"
-    impTemp.style.display = "none"
-    impTemp.textContent = realTempF + " °F"
+  const metricTemp = document.createElement("p")
+  metricTemp.className = "temperature metric"
+  metricTemp.textContent = realTempC + " °C"
 
-    mainInfo.append(weatherIcon, metricTemp, impTemp)
+  const impTemp = document.createElement("p")
+  impTemp.className = "temperature imperial"
+  impTemp.style.display = "none"
+  impTemp.textContent = realTempF + " °F"
 
-  const otherInfo = document.createElement('div')
-  otherInfo.className = 'other-info'
+  mainInfo.append(weatherIcon, metricTemp, impTemp)
 
-    const weatherCondition = document.createElement("p")
-    weatherCondition.textContent = conditionText
+  const otherInfo = document.createElement("div")
+  otherInfo.className = "other-info"
 
-    const humidityPercent = document.createElement("p")
-    humidityPercent.className = "current-humidity"
-    humidityPercent.textContent = "Humidity: " + humidity + "%"
+  const weatherCondition = document.createElement("p")
+  weatherCondition.textContent = conditionText
 
-    const uvi = document.createElement("p")
-    uvi.textContent = "UV Index: " + uvIndex
+  const humidityPercent = document.createElement("p")
+  humidityPercent.className = "current-humidity"
+  humidityPercent.textContent = "Humidity: " + humidity + "%"
 
-    otherInfo.append(weatherCondition, humidityPercent, uvi)
+  const uvi = document.createElement("p")
+  uvi.textContent = "UV Index: " + uvIndex
 
-  container.append(
-    localInfo,
-    mainInfo,
-    otherInfo
-  )
-  
+  otherInfo.append(weatherCondition, humidityPercent, uvi)
+
+  container.append(localInfo, mainInfo, otherInfo)
+
   const forecastDash = document.createElement("div")
   forecastDash.className = "forecast-dashboard"
 

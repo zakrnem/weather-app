@@ -29,8 +29,8 @@ export function homepage() {
       }
     }
   })
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
       const userInput = document.querySelector(".search-bar").value
       weather(userInput)
     }

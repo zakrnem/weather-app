@@ -1,10 +1,13 @@
 {
   "name": "weather-app",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Displays weather",
   "main": "index.js",
   "scripts": {
-    "test": "console.log('Test')"
+    "test": "console.log('Test')",
+    "deploy": "gh-pages -d dist -r https://github.com/zakrnem/weather-app",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
