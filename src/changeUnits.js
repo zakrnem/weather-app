@@ -1,12 +1,14 @@
 export function changeUnits(units) {
-  const metric = document.querySelector("#metric")
-  const imperial = document.querySelector("#imperial")
+  const metric = document.getElementsByClassName("metric")
+  const metricArray = [...metric]
+  const imperial = document.getElementsByClassName("imperial")
+  const imperialArray = [...imperial]
 
   if (units !== "metric") {
-    imperial.style.display = ""
-    metric.style.display = "none"
+    imperialArray.forEach((imperialTemp) => imperialTemp.style.display = "")
+    metricArray.forEach((metricTemp) =>  metricTemp.style.display = "none")
   } else {
-    imperial.style.display = "none"
-    metric.style.display = ""
+    imperialArray.forEach((imperialTemp) => imperialTemp.style.display = "none")
+    metricArray.forEach((metricTemp) =>  metricTemp.style.display = "")
   }
 }

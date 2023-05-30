@@ -15,13 +15,11 @@ export function forecastDashboard(avgTempC, avgTempF, conditionText, conditionIc
             weatherIcon.src = conditionIcon
 
             const metricTemp = document.createElement("p")
-            metricTemp.className = "forecast-temperature"
-            metricTemp.id = "metric"
+            metricTemp.className = "temperature metric"
             metricTemp.textContent = avgTempC + " °C"
 
             const impTemp = document.createElement("p")
-            impTemp.className = "forecast-temperature"
-            impTemp.id = "imperial"
+            impTemp.className = "temperature imperial"
             impTemp.style.display = "none"
             impTemp.textContent = avgTempF + " °F"
 

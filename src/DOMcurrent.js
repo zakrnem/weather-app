@@ -39,13 +39,11 @@ export function currentDashboard(
     weatherIcon.src = conditionIcon
 
     const metricTemp = document.createElement("p")
-    metricTemp.className = "current-temperature"
-    metricTemp.id = "metric"
+    metricTemp.className = "temperature metric"
     metricTemp.textContent = realTempC + " °C"
 
     const impTemp = document.createElement("p")
-    impTemp.className = "current-temperature"
-    impTemp.id = "imperial"
+    impTemp.className = "temperature imperial"
     impTemp.style.display = "none"
     impTemp.textContent = realTempF + " °F"
 
