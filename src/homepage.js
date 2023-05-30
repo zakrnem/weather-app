@@ -1,4 +1,4 @@
-import { header } from "./header"
+import { header } from "./DOMheader"
 import { footer } from "footer-zkrnem"
 import { changeUnits } from "./changeUnits"
 import { weather } from "./weather"

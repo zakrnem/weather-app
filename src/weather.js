@@ -1,5 +1,5 @@
-import { currentWeather } from "./currentWeather"
-import { forecast } from "./forecast"
+import { currentWeather } from "./RESPcurrent"
+import { forecast } from "./RESPforecast"
 
 export function weather(city) {
     currentWeather(city)

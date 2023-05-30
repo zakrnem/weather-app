@@ -1,5 +1,5 @@
 import { dayFromDate } from "./dayFromDate";
-import { forecastDashboard } from "./forecastDashboard";
+import { forecastDashboard } from "./DOMforecast";
 import { getData } from "./getData";
 
 export async function forecast(city) {
